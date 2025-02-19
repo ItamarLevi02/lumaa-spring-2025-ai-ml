@@ -52,6 +52,23 @@ python3 Recommender_System.py
 
 wait for model to prompt you and have fun!
 
+## Example Output
+You: I enjoy romantic novels
+
+Bot: Based on your interest in romantic movies, here are five recommendations that you might enjoy:
+
+1. "The Notebook" (2004) - Directed by Nick Cassavetes, this film is a classic romantic drama featuring Ryan Gosling and Rachel McAdams. It tells the story of a young couple who fall in love during the summer of 1940.
+
+2. "Pride and Prejudice" (2005) - This adaptation of Jane Austen's classic novel is directed by Joe Wright and stars Keira Knightley and Matthew Macfadyen. It's a romantic drama set in the 18th century England.
+
+3. "Before Sunrise" (1995) - Directed by Richard Linklater, this film is a romantic drama featuring Ethan Hawke and Julie Delpy. It tells the story of a young man and woman who meet on a train in Europe and wind up spending one evening together in Vienna.
+
+4. "A Walk to Remember" (2002) - This romantic drama directed by Adam Shankman features Mandy Moore and Shane West. It's a touching story about a high school bad boy who falls in love with a minister's daughter.
+
+5. "Eternal Sunshine of the Spotless Mind" (2004) - This romantic sci-fi film directed by Michel Gondry stars Jim Carrey and Kate Winslet. It's a unique love story about a couple who undergo a procedure to erase each other from their memories when their relationship turns sour.
+
 ## Salary Expectation:
 
 $30/hr
+
+
