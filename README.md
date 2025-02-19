@@ -1,91 +1,57 @@
-# AI/Machine Learning Intern Challenge: Simple Content-Based Recommendation
+# AI Chatbot with Pinecone & OpenAI
 
-**Deadline**: Sunday, Feb 23th 11:59 pm PST
+This project is a movie recommendation chatbot that leverages OpenAI embeddings, Pinecone vector search, and LangChain to provide movie recommendations based on user input. The chatbot processes a dataset of movies, transforms them into embeddings, which are stored in a vector database which allows for more acurate and fast retrevial then most traditional methods. I believe that this is a more forward thinking approach and one that looks to the future of machine learning, and that is why I decided to levereage a RAG system over a TF-IDF system
 
----
+## 📂 Dataset
 
-## Overview
+The project uses a _CSV file (imdb_movie_dataset.csv)_, which can also be found at: https://www.kaggle.com/datasets/yusufdelikkaya/imdb-movie-dataset. The features included in the dataset are:
+-Title
+-Genre
+-Description
+-Director
+-Actors
+-Year
+-Rating
+-Metascore
 
-Build a **content-based recommendation system** that, given a **short text description** of a user’s preferences, suggests **similar items** (e.g., movies) from a small dataset. This challenge should take about **3 hours**, so keep your solution **simple** yet **functional**.
+## 🛠️ Installation
 
-### Example Use Case
+### 1. Create and Activate Virtual Environment
 
-- The user inputs:  
-  *"I love thrilling action movies set in space, with a comedic twist."*  
-- Your system processes this description (query) and compares it to a dataset of items (e.g., movies with their plot summaries or keywords).  
-- You then return the **top 3–5 “closest” matches** to the user.
+```bash
+python3 -m venv lumaa
+source lumaa/bin/activate  # macOS/Linux
+lumaa\Scripts\activate    # Windows
+```
 
----
+### 2. Install Dependencies Activate the Virtual Environment
 
-## Requirements
+```bash
+pip install -r requirements.txt
+```
 
-1. **Dataset**  
-   - Use a **small** public dataset of items (e.g., a list of movies with plot summaries, or other textual descriptions).  
-   - Make sure the dataset is easy to handle (maybe 100–500 rows) so the solution remains quick to implement and run.  
-   - Include the dataset in your forked repository *or* provide instructions/link on how to download it.  
+### 3. Set up Environment Variables
 
-2. **Approach**  
-   - **Content-Based**: At a minimum, use text similarity to recommend items.  
-     - For instance, you can transform both the user’s text input and each item’s description into TF-IDF vectors and compute **cosine similarity**.  
-   - Return the **top N** similar items (e.g., top 5).
+(I have attached MY API keys that way the project is easy for you guys to run, but you will need to create a .env file at the root directory and add) :
 
-3. **Code Organization**  
-   - You may use a **Jupyter Notebook** or **Python scripts**.  
-   - Keep it **readable** and **modular** (e.g., one section for loading data, one for building vectors, one for computing similarity, etc.).  
-   - Briefly comment or docstring your key functions/sections.
+PINECONE_API_KEY = "pcsk_5jRVqy_KMSsgNvdoujgzDxFbHULRx6JiMScHN9t95KswjU7g7qdfdWmpeUa4S8E4sfsHn5"
+PINECONE_API_ENV = "us-east-1-aws"
+OPENAI_API_KEY = "sk-proj-YuRrwLegwEDAQSAZWNNTFYPnP4ll07VOTYWJRPNXBmSH69aXNP-08Pnu5ByUOzS5H3EbVkQp5qT3BlbkFJjvxU0jtYQvCGt_ptpxqC-\_AWD8yHu8bD2QdmP76aBMjJyTI0OGYt8a6Z0u16pGuGB6FxAtTpYA"
 
-4. **Output**  
-   - When given an input description (e.g., `"I like action movies set in space"`), your system should print or return a list of recommended items (e.g., 3–5 titles).  
-   - Include the similarity score or rank if you’d like.
+### 4. Run the final model
 
-5. **Summary & Instructions**  
-   - A short `README.md` that includes:
-     - **Dataset**: Where it’s from, any steps to load it.  
-     - **Setup**: Python version, virtual environment instructions, and how to install dependencies (`pip install -r requirements.txt`).  
-     - **Running**: How to run your code (e.g., `python recommend.py "Some user description"` or open your notebook in Jupyter).  
-     - **Results**: A brief example of your system’s output for a sample query.
+navigate into the model directory and run the Recommender_System.py file:
 
----
+```bash
+cd model
+python3 Recommender_System.py
 
-## Deliverables
+```
 
-1. **Fork the Public Repository**  
-   - **Fork** this repo into your own GitHub account.
+### 5. Querey Model
 
-2. **Implement Your Solution**  
-   - Load and preprocess your dataset (e.g., read CSV, handle text columns).  
-   - Convert text data to vectors (e.g., TF-IDF).  
-   - Implement a function to compute similarity between the user’s query and each item’s description.  
-   - Return the top matches.
-   - Salary expectation per month (Mandatory)
+wait for model to prompt you and have fun!
 
-3. **Short Video Demo**  
-   - In a `.md` file (e.g., `demo.md`) within your fork, paste a link to a **brief screen recording** (video link).  
-   - Demonstrate:
-     - How you run the recommendation code.  
-     - A sample query and the results.
+## Salary Expectation:
 
-4. **Deadline**  
-   - Submit your fork by **Sunday, Feb 23th 11:59 pm PST**.
-
-> **Note**: This should be doable within ~3 hours. Keep it **straightforward**—you do **not** need advanced neural networks or complex pipelines. A simple TF-IDF + cosine similarity approach is sufficient.
-
----
-
-## Evaluation Criteria
-
-1. **Functionality**  
-   - Does your code run without errors?  
-   - When given an input query, does it successfully output relevant items?
-
-2. **Code Quality**  
-   - Clear, commented code (where it counts).  
-   - Logical steps (load data → transform → recommend).
-
-3. **Clarity**  
-   - Is your `README.md` straightforward about setup, how to run, and what to expect?
-
-4. **ML/Recommendation Understanding**  
-   - Basic implementation of a content-based recommendation approach (vectorization, similarity measure).
-
-**We look forward to seeing your solution!** Good luck!
+$30/hr

@@ -1,0 +1,11 @@
+ctransformers==0.2.5
+sentence-transformers==2.2.2
+langchain
+langchain-community
+langchain-openai
+pinecone-client
+python-dotenv
+openai
+pydantic
+tf-keras
+pandas
