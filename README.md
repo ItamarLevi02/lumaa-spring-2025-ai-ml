@@ -1,4 +1,4 @@
-# AI Chatbot with Pinecone & OpenAI
+# Movie Recommender System using RAG
 
 This project is a movie recommendation chatbot that leverages OpenAI embeddings, Pinecone vector search, and LangChain to provide movie recommendations based on user input. The chatbot processes a dataset of movies, transforms them into embeddings, which are stored in a vector database which allows for more acurate and fast retrevial then most traditional methods. Because of the fast retreival, I was able to use a dataset a bit bigger then the specified length or even bigger if wanted. I believe that this is a more forward thinking approach and one that looks to the future of machine learning, and that is why I decided to levereage a RAG system over a TF-IDF system
 
