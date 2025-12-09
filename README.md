@@ -32,11 +32,9 @@ pip install -r requirements.txt
 
 ### 3. Set up Environment Variables
 
-(I have attached MY API keys that way the project is easy for you guys to run (I understand that this is horrible practice, but there is only about $3 worth of credits on the account as they are temporary keys that will be deleted after the project has been reviewed. I trust that the keys would'nt be abused as well), but you will need to create a .env file at the root directory and add) :
-
-- PINECONE_API_KEY = "pcsk_5jRVqy_KMSsgNvdoujgzDxFbHULRx6JiMScHN9t95KswjU7g7qdfdWmpeUa4S8E4sfsHn5"
-- PINECONE_API_ENV = "us-east-1-aws"
-- OPENAI_API_KEY = "sk-proj-YuRrwLegwEDAQSAZWNNTFYPnP4ll07VOTYWJRPNXBmSH69aXNP-08Pnu5ByUOzS5H3EbVkQp5qT3BlbkFJjvxU0jtYQvCGt_ptpxqC-\_AWD8yHu8bD2QdmP76aBMjJyTI0OGYt8a6Z0u16pGuGB6FxAtTpYA"
+- PINECONE_API_KEY = ""
+- PINECONE_API_ENV = ""
+- OPENAI_API_KEY = ""
 
 ### 4. Run the final model
 
